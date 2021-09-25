@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="POST">
+        <fieldset>
+            <legend>Agregar producto</legend>
+            <br>
+            <label for="codigo">
+                C&#243;digo*
+            </label>
+            <input type="tel" id="codigo" class="cod-abrev-fecha-ruc-precio" minlength="6" maxlength="6" pattern="[0-9]{6}"
+                placeholder="Solo n&#250;meros" required>
+            <input type="button" value="Validar">
+             <br>
+
+            <label for="nombre">
+                Nombre*
+            </label>
+            <input type="text" id="nombre" minlength="2" maxlength="100" pattern="[0-9a-zA-Z]{2,100}"
+                placeholder="Solo letras y n&#250;meros" required>
+            <br>
+
+            <label for="abreviatura">
+                Abreviatura
+            </label>
+            <input type="text" id="abreviatura" class="cod-abrev-fecha-ruc-precio" minlength="1" maxlength="10" pattern="[a-zA-Z]{1,10}" placeholder="Solo letras"
+                required>
+            <br>
+    
+            <label for="categoria">
+                Categor&#237;a*
+            </label>
+            <select id="categoria">
+                <option value="Panes especiales">Panes especiales</option>
+                <option value="Lacteos" selected>L&#225;cteos</option>
+                <option value="Pasteles">Pasteles</option>
+            </select>
+            <br>
+            
+            <label for="ruc-proveedor">
+                RUC proveedor*
+            </label>
+            <input type="tel" id="ruc-proveedor" class="cod-abrev-fecha-ruc-precio" minlength="5" maxlength="20" pattern="[0-9]{5,20}" placeholder="Solo n&#250;meros">
+            <br>
+        
+            <label for="precio">
+                Precio* 
+            </label>
+            <input type="number" id="precio" class="cod-abrev-fecha-ruc-precio" step="0.01" value="3" >
+            <br>
+        
+            <label for="color-de-etiqueta">
+                Color de etiqueta 
+            </label>
+            <input type="color" id="color-de-etiqueta">
+            <br>
+        
+            <label for="fecha">
+                Fecha* 
+            </label>
+            <input type="date" id="fecha" class="cod-abrev-fecha-ruc-precio">
+            <br>
+        
+            <label for="estado">
+                Estado* 
+            </label>
+            <input type="radio" name="estado" id="activo" checked> Activo
+            
+            <input type="radio"  name="estado" id="suspendido"> Suspendido
+            
+            <input type="radio"  name="estado" id="de-baja"> De baja
+            
+            <br>
+        
+            <label for="afecto-impuesto">
+                Afecto a impuesto*
+            </label>
+            <input type="checkbox" name="afecto" id="afecto-impuesto">
+            <br>
+        
+            <label for="foto">
+                Foto
+            </label>
+            <input type="file" id="foto" accept=".png,.jpg">
+            <img src="imagenes/image.png" alt="logo image" id="logo-img">
+            <br>
+        
+            <label for="descripcion">
+                Descripci&#243;n
+            </label>
+            <textarea id="descripcion" cols="30" rows="10"></textarea>
+            <br>
+        
+            <button type="submit" id="grabar">Grabar</button>
+            <button type="reset">Limpiar</button>
+        </fieldset>
+        
+    </form>
+</body>
+
+</html>
