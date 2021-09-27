@@ -1,10 +1,106 @@
-body{
-    font-family: “Verdana, Geneva, sans-serif”;
+body {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 8% 7% 75% 10%;
+    row-gap: 1.7%;
+    column-gap: 1%;
 }
 
-form label{
+header{
+    background-color: blue;
+    border: black solid;
+    font-family: Verdana, Geneva, sans-serif;
+    display: grid;
+    grid-template-columns: 89% 5% 6%;
+    grid-column: 1 / 3;
+    color: white;
+    align-items: center;
+}
+
+
+h1{
+    text-align: center;
+}
+
+#foto-perfil{
+    clip-path: circle(50% at 50% 50%);
+    width: 70%;
+    filter: opacity(60%);
+    display: grid;
+    margin-bottom: 31%;
+}
+
+p{
+    margin-bottom: 40%;
+}
+
+nav{
+    display: grid;
+    border: black solid;
+    grid-column: 1 / 3; 
+    text-align: right;
+    align-items: center;
+}
+
+.contenedor-nav{
+    margin-right: 1%;
+}
+
+aside{
+    background-color: lightblue;
+    border: black solid;
+    color: black;
+    font-family: Courier New, Courier, monospace;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-left: 2%;
+}
+
+aside p{
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+
+.boton-menu{
+    border: black solid;
+    border-radius: 15%;
+    font-family: Courier New, Courier, monospace;
     display: inline-block;
-    width: 25.5%;
+    width: 90%; 
+}
+
+#admin-pagos{
+    margin-bottom: 5%;
+}
+
+.icon{
+    width: 20%;
+    height: 20%;
+    margin-bottom: 3%;
+}
+
+main{
+    background-color: lightblue;
+    border: black solid;
+    color: black;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: “Courier New, Courier, monospace”;
+    margin-right: 1%;
+}
+
+main form{
+  
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+main form label{
+    display: inline-block;
+    width: 30%;
     margin-bottom: 3%;
 }
 
@@ -17,7 +113,7 @@ form label{
 }
 
 #categoria{
-    width: 23%;
+    width: 24%;
 }
 
 #color-de-etiqueta{
@@ -25,17 +121,16 @@ form label{
 }
 
 #foto{
-    width: 27%;
+    width: 23%;
 }
 
 #logo-img{
-    height: 19%;
-    width: 10%;
-    margin-bottom: 0%;
+    height: 8%;
+    width: 13%;
 }
 
 textarea{
-    width: 70%;
+    width: 60%;
     height: 5%;
 }
 
@@ -43,12 +138,28 @@ textarea{
     margin-left: 35%;
 }
 
-button{
-    margin-right: 8%;
+main button{
+    margin-right: 5%;
     margin-top: 2%;
-    margin-bottom: 2%;
+  
 }
 
 fieldset{
-    width: 37%;
+    border: black solid;
+    width: 59%;
+    height: 82%;
+}
+
+footer{
+    background-color: cornflowerblue;
+    border: black solid;
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+}
+
+a{
+    color: black;
 }
